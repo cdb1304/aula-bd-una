@@ -41,3 +41,4 @@ INSERT INTO pedido (id_cliente, id_livro, data_pedido, quantidade) VALUES
 (1, 1, '2026-03-05', 1), 
 (2, 3, '2026-03-06', 2), 
 (1, 2, '2026-03-07', 1); 
+
