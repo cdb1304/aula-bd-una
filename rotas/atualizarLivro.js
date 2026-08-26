@@ -5,7 +5,7 @@ export default function atualizarLivro(req, res) {
   
   const { titulo, autor, preco, estoque } = req.body;
 
-  if (!titulo || !autor || !preco || estoque === undefined) 
+  if (!titulo || !autor || preco === undefined || estoque === undefined) 
     return res.status(400).json({ msg_erro: 'Todos os campos são obrigatórios para atualização!' });
     
   const query = 'UPDATE livro SET titulo = ?, autor = ?, preco = ?, estoque = ? WHERE id = ?';
@@ -19,4 +19,4 @@ export default function atualizarLivro(req, res) {
     
     res.json({ mensagem: 'Livro atualizado!', id, titulo, autor, preco, estoque });
   });
-} 
+}

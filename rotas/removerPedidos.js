@@ -10,8 +10,8 @@ export default function removerPedido(req, res) {
       return res.status(500).json({ msg_erro: erro.message });
 
     if (resultado.affectedRows === 0) 
-      return res.status(404).json({ mensagem: 'Livro não encontrado!' });
+      return res.status(404).json({ mensagem: 'Pedido não encontrado!' });
 
-    res.json({ mensagem: 'Livro e seus pedidos removidos com sucesso!' });
+    res.json({ mensagem: 'Pedido removido com sucesso!' });
   });
 }

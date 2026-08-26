@@ -3,7 +3,7 @@ import bd from '../bd.js';
 export default function cadastrarLivro(req, res) {
   const { titulo, autor, preco, estoque } = req.body;
 
-  if (!titulo || !autor || !preco || estoque === undefined) 
+  if (!titulo || !autor || preco === undefined || estoque === undefined) 
     return res.status(400).json({ msg_erro: 'Todos os campos são obrigatórios!' });
   
   const query = 'INSERT INTO livro (titulo, autor, preco, estoque) VALUES (?, ?, ?, ?)';
