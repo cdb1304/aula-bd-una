@@ -27,6 +27,9 @@
     "cors": "^2.8.6",
     "expo": "^57.0.17",
     "express": "^5.2.1",
-    "mysql2": "^3.23.3"
+    "mysql2": "^3.23.3",
+    "react": "^19.2.8",
+    "react-native": "^0.87.1",
+    "react-native-safe-area-context": "^5.9.1"
   }
 }
